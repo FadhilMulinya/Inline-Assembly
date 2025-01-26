@@ -1,66 +1,86 @@
-## Foundry
+---
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# **Smart Contracts for Learning Inline Assembly**
 
-Foundry consists of:
+This repository contains a set of Solidity smart contracts designed to help you learn and understand **inline assembly**. Inline assembly allows you to write low-level EVM (Ethereum Virtual Machine) code directly within Solidity, providing fine-grained control over gas usage and storage manipulation.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## **What is Inline Assembly?**
 
-https://book.getfoundry.sh/
+Inline assembly is a way to write low-level EVM opcodes directly in Solidity. It is useful for:
+- Optimizing gas usage.
+- Accessing storage and memory directly.
+- Performing complex operations that are not easily expressible in high-level Solidity.
 
-## Usage
+**Note**: Inline assembly bypasses Solidity's safety checks, so it should be used with caution.
 
-### Build
+---
 
-```shell
-$ forge build
-```
+## **Getting Started**
 
-### Test
+### Prerequisites
+- Basic knowledge of Solidity and Ethereum smart contracts.
+- [Node.js](https://nodejs.org/) (v16 or higher).
+- [Foundry](https://book.getfoundry.sh/) or [Hardhat](https://hardhat.org/) for local development and testing.
 
-```shell
-$ forge test
-```
+### Installation
+1. Clone this repository:
+   ```bash
+   git clone git@github.com:FadhilMulinya/Inline-Assembly.git
+   cd Inline-Assembly
+   ```
+2. Install dependencies:
+   ```bash
+   forge install
+   ```
 
-### Format
+### Usage
+1. Compile the contracts:
+   ```bash
+   forge compile
+   ```
+   or
+    ```bash
+   forge build
+   ```
 
-```shell
-$ forge fmt
-```
 
-### Gas Snapshots
+---
 
-```shell
-$ forge snapshot
-```
+## **Key Concepts Covered**
+- **Storage Layout**: Learn how Solidity stores state variables and how to manipulate them using inline assembly.
+- **Memory Manipulation**: Understand how to allocate and write to memory using low-level opcodes.
+- **Gas Optimization**: Explore techniques to reduce gas costs using inline assembly.
+- **Safety Considerations**: Learn best practices for writing secure and efficient assembly code.
 
-### Anvil
+---
 
-```shell
-$ anvil
-```
+## **Contributing**
 
-### Deploy
+Contributions are welcome! If you have ideas for new examples or improvements, please open an issue or submit a pull request.
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+---
 
-### Cast
+## **License**
 
-```shell
-$ cast <subcommand>
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Help
+---
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## **Resources**
+- [Solidity Documentation](https://soliditylang.org/docs/)
+- [EVM Opcodes](https://ethereum.org/en/developers/docs/evm/opcodes/)
+- [Foundry Book](https://book.getfoundry.sh/)
+
+---
+
+## **Author**
+
+[Fadhil](https://fadhilmulinya.vercel.app/)  
+[https://github.com/FadhilMulinya]  
+[mulinyafadhil@gmail.com]
+
+---
+
+This version is concise and focuses on the essentials, making it easy for learners to get started. Let me know if you'd like further adjustments!
