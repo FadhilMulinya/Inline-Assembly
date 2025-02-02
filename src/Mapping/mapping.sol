@@ -136,3 +136,18 @@ contract Mapppings {
 
 // addToList:
 //     Address: 0xDA0bab807633f07f013f94DD0E6A4F96F8742B53 → List: [98, 40, 100]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

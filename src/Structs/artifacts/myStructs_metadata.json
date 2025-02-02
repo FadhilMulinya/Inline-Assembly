@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "height",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "legal",
+						"type": "bool"
+					}
+				],
+				"name": "personCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "height",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "legal",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct myStructs.Person",
+						"name": "person",
+						"type": "tuple"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "readStruct",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "height",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "legal",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct myStructs.Person",
+						"name": "persons",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/Structs/tupleStructs.sol": "myStructs"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/Structs/tupleStructs.sol": {
+			"keccak256": "0xd527887da22ff1baf9a4e65c3d8f22cc2f51e7548bb3e56b94a4fb7840d910ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3c53d15f94dbaade2ad889cb9ce7dcb2e6c0163bda5027c46e85bd8b29e05061",
+				"dweb:/ipfs/QmWaBWLZU3LrQhwt8ESRwwUAtDb4GVGxPtBghHeJRNbNQe"
+			]
+		}
+	},
+	"version": 1
+}
